@@ -21,7 +21,16 @@
 		$firstNumber = $_REQUEST["firstNumber"];
 		$secondNumber = $_REQUEST["secondNumber"];
 
-		/* trying some error checking, untested as server is down as of 4/22 @ 6:30 am
+		// Programming comments presented in comments; I know:
+		
+		/* Trying some error checking.
+		*  I liked the fact that you defined plagiarism as cut and copy code in 4/22 class.
+		*  That was important as I use what I learned about a "sticky form" form from the PHP book I'm reading in the 
+		*  commented error handling form below, not implemented.
+		
+		/* Even though a course in Logic isn't required I do now understand OR/AND in a logical implementation and I understand that
+		*  after taking a course in Logic.
+		
 		
 		if ($noun == null OR
 			$adjective == null OR 
@@ -43,18 +52,16 @@
 			} ?>
 		*/
 		
-		//echo "Peter is " . $age['Peter'] . " years old."; <- w3school indicated a dot is require and not "+"
+		//echo "Peter is " . $age['Peter'] . " years old."; <- w3school indicated a dot is require and not "+" 4/21
 		
-		echo "Joe Momma took his " . $adjective . " " . $noun . " and went " . $verb . " with the " . $noun;
+		echo "Joe Momma took his " . $adjective . " " . $noun . " and went " . $verb . " with the " . $noun . ".  ";
 
 		if ($firstNumber == 5){
-			echo "Joe Momma did this " . $firstNumber . " times in a row.";
-		}
-
-		if($secondNumber > 5){
-			echo "Joe Momma did this " . $secondNumber . " times repeatedly until he became tired.";
+			echo "Joe Momma did this " . $firstNumber . " times in a row.  ";
+		} else if ($secondNumber > 5){
+			echo "Joe Momma did this " . $secondNumber . " times repeatedly until he became tired.  ";
 		} else {
-			echo "Joe Momma did this " . $secondNumber . " and thought he could have done it more.";
+			echo "Joe Momma did this " . $secondNumber . " times and thought he could have done it more.  ";
 		}	
 	
 		echo "Silly J M.";
