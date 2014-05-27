@@ -39,4 +39,4 @@ $rowData = $preRowData->get_result();
 	$maxCal = $preMaxCal->get_result();
 	$maxOfCal = $maxCal->fetch_array();
 ?>
-	<p>Neko, you have burned a maximum of <?= $maxOfCal["cal"] ?> when you where do this activity, <i>"<?= $maxOfCal["act"] ?>"</i> on <?= $maxOfCal["entryDate"] ?></p>
+	<p>Neko, you have burned a maximum of <?= $maxOfCal["cal"] ?> calories when you where do this activity, <i>"<?= $maxOfCal["act"] ?>"</i> on <?= $maxOfCal["entryDate"] ?></p>
